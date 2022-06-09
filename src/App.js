@@ -8,9 +8,9 @@ import ToDoList from "./components/ToDoList";
 function App() {
   // Create sample data
   const initialTodos = [
-    { text: "Go to gym", id: "0000", completed: false },
-    { text: "Finish assignment", id: "0001", completed: false },
-    { text: "Solve world hunger", id: "0002", completed: false },
+    { text: "go to gym", id: "0000", completed: false },
+    { text: "finish assignment", id: "0001", completed: false },
+    { text: "solve world hunger", id: "0002", completed: false },
   ];
 
   // Set the state
@@ -66,7 +66,9 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>aj's to dos</h1>
+        <h1>✍🏻📗🍃</h1>
+        
+        
       </header>
       <Form
         setInputText={setInputText}
