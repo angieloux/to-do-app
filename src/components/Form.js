@@ -12,8 +12,9 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
     // add the new item to the todo array based on user input and give it a random id
     setTodos([
       ...todos,
-      { text: inputText, completed: false, id: Math.round(Math.random() * 10000) },
-    ]);
+      { text: inputText, completed: false, id: Math.round(Math.random() * 10000) }
+    ])
+    ;
 
     // reset the input back to nil once the to-do item has been added
     setInputText('')
@@ -21,7 +22,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
 
   return (
     <form>
-      <input onChange={inputTextHandler} type="text" className="todo-input" />
+      <input onChange={inputTextHandler} value={inputText} type="text" className="todo-input" />
       <button onClick={submitTodoHandler} className="todo-button" type="submit">
         <i className="fas fa-plus-square"></i>
       </button>
