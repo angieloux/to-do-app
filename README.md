@@ -1,4 +1,4 @@
-# To-do App 
+# To-do App
 
 This is a simple to-do app that helps its users keep track of things they need to get done. 
 I made use of state management (`useEffect` and `useState` particularly) to allow a user to add, remove, tick off and filter to-do items.
